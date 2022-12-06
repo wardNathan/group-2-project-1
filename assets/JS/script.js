@@ -29,12 +29,16 @@ function getAsteroids() {
     .then(function (data) {
       console.log(data);    
       
-      
-
-
+     $('#distance').append("Distance: Lunar Miles: " + data['near_earth_objects']['2015-09-08'][0]['close_approach_data'][0]['miss_distance']['lunar']);
+     $('#distance').append("Miles: " + data['near_earth_objects']['2015-09-08'][0]['close_approach_data'][0]['miss_distance']['miles']);
+     $('#size').append("Size: Feet: " + data['near_earth_objects']['2015-09-08'][0]['estimated_diameter']['feet']['estimated_diameter_max']);
+     $('#size').append("Miles: " + data['near_earth_objects']['2015-09-08'][0]['estimated_diameter']['miles']['estimated_diameter_max']);
+     $('#hazardous').append("Potentially Fatal: " + data['near_earth_objects']['2015-09-08'][0]['is_potentially_hazardous_asteroid']);
+     $('#name').append("Asteroid Name: " + data['near_earth_objects']['2015-09-08'][0]['name']);
+     $('#velocity').append("Velocity: KM/S: " + data['near_earth_objects']['2015-09-08'][0]['close_approach_data'][0]['relative_velocity']['kilometers_per_second']);
+     $('#velocity').append("MPH: " + data['near_earth_objects']['2015-09-08'][0]['close_approach_data'][0]['relative_velocity']['miles_per_hour']);
     });
 }
-
 
 getAsteroids(getAsteroids)
 
@@ -57,7 +61,7 @@ getAsteroids(getAsteroids)
   
 console.log(getExoplanet);
 
-getAsteroids(getAsteroids)
+
 
   function getPlanetSticker() {
     var requestUrl = 'https://api.giphy.com/v1/stickers/search?api_key=4whkYATvg44bONJ5xoAyLAWmQs973i0g&q=planets&limit=25&offset=0&rating=g&lang=en';
