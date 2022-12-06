@@ -2,3 +2,12 @@
 display: inline-block;
 text-align: center;
 }
+
+#POD, img {
+width: 800px;
+
+margin-left: 50px;
+flex-wrap: wrap;
+max-width: 100%;
+min-width: 800px;
+}
