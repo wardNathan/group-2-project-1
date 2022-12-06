@@ -27,7 +27,11 @@ function getAsteroids() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);     
+      console.log(data);    
+      
+      
+
+
     });
 }
 
@@ -41,7 +45,10 @@ getAsteroids(getAsteroids)
         return response.json();
       })
       .then(function (data) {
-        console.log(data);     
+        console.log(data);   
+        
+        
+
       });
   }
 
@@ -59,7 +66,9 @@ getAsteroids(getAsteroids)
         return response.json();
       })
       .then(function (data) {
-        console.log(data);     
+        console.log(data);
+        let randNum = Math.floor(Math.random() * 24) + 1;
+        document.getElementById("ticket").innerHTML = "<img src = " + data['data'][randNum]['images']['downsized']['url'] + ">";
       });
   }
 
