@@ -1,4 +1,4 @@
-//let aPod = document.getElementById('POD');
+
 
 function getApod() {
   var requestUrl = 'https://api.nasa.gov/planetary/apod?api_key=Y8ssRfZuDgzbCeAiyKHGwmeED3ohkeyHHyZc2BrZ';
@@ -12,9 +12,7 @@ function getApod() {
       
       document.getElementById("POD").innerHTML = "<img src = " + data['hdurl'] + ">";
       
-      //document.getElementById("img").src = ['url']; 
-      //  document.getElementById("img" +(i+1)).src ="http://openweathermap.org/img/wn/" + data['list'][i]['weather'][0]['icon']+".png";
-  
+
     });
 }
 
