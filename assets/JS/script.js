@@ -1,3 +1,5 @@
+
+
 function getApod() {
   var requestUrl = 'https://api.nasa.gov/planetary/apod?api_key=Y8ssRfZuDgzbCeAiyKHGwmeED3ohkeyHHyZc2BrZ';
 
@@ -6,7 +8,11 @@ function getApod() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);     
+      console.log(data);  
+      
+      document.getElementById("POD").innerHTML = "<img src = " + data['hdurl'] + ">";
+      
+
     });
 }
 
@@ -21,7 +27,11 @@ function getAsteroids() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);     
+      console.log(data);    
+      
+      
+
+
     });
 }
 
@@ -35,7 +45,10 @@ getAsteroids(getAsteroids)
         return response.json();
       })
       .then(function (data) {
-        console.log(data);     
+        console.log(data);   
+        
+        
+
       });
   }
 
@@ -53,7 +66,9 @@ getAsteroids(getAsteroids)
         return response.json();
       })
       .then(function (data) {
-        console.log(data);     
+        console.log(data);
+        let randNum = Math.floor(Math.random() * 24) + 1;
+        document.getElementById("ticket").innerHTML = "<img src = " + data['data'][randNum]['images']['downsized']['url'] + ">";
       });
   }
 
