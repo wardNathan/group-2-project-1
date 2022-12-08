@@ -1,5 +1,6 @@
 * {
     margin: 0;
+
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
@@ -29,3 +30,14 @@
   ol, ul {
     list-style: none;
   }
+
+padding: 0;
+box-sizing: border-box;
+line-height: 1.5;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+html {
+height: 100%;
+
+}
+
