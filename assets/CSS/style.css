@@ -30,6 +30,51 @@ body {
     max-width: 100%;
     max-height: 80px;
 }
+#POD{
+ height: 800px;
+ width: 800px;
+}
+#impact{
+    font-size:xx-large;
+    color: red; 
+}
+#countdown{
+    color: red; 
+}
+#Asteroid{
+    text-align: center;
+}
+#hazardous{
+    color: red;
+}
+#incoming{
+    text-decoration: underline;
+    font-size: xx-large;
+}
+#thepod{
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    margin-top: 15px;
+}
+#theasteroid{
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    margin-top: 15px;
+}
+#theform{
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    margin-top: 15px;
+}
+#themodal{
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    margin-top: 15px;
+}
 /* @media only screen and (max-width: 600px) {
     nav {
         flex-direction: column;
@@ -40,7 +85,7 @@ body {
     }
     nav li {
         padding: 0.5rem 0;
-    } */
+    }
  li {
 display: inline-block;
 text-align: center;
@@ -65,4 +110,4 @@ min-width: 800px;
     width:  100px;
     flex-wrap: wrap;
     margin-bottom: 50px;
-}
+} */
