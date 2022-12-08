@@ -28,6 +28,7 @@
                         Menu
                     </a>
                     <div class="navbar-dropdown is-right">
+                        
                         <a class="navbar-item">
                             Daily Picture
                         </a>
@@ -45,17 +46,21 @@
     </header>
     <div>
         <h1>Hello travelers!</h1>
-        <p>Are you prepared for a journey of a lifetime? You better be, because the world is ending!</p>
+        <p>Are you prepared for a journey of a lifetime? You better be, because the world is ending! Today <span id="time-display"></span> 
+            an asteroid will hit the planet.</p>
     </div>
+    
     <div id="POD">
         <img>
     </div>
     <div id="Asteroid">
+        <h2>Incoming Asteroid</h2>
         <div id="distance" ></div>
         <div id="size" ></div>
         <div id="hazardous" ></div>
         <div id="name" ></div>
         <div id="velocity" ></div>
+        <div id="impact">Impact Time: <span id="countdown"></span></div>
     </div>
     <div id="Exoplanet">
         <form>
@@ -65,8 +70,20 @@
         </form>
         <button class="button is-link is-outlined">Generate Ticket</button>
     </div>
+    <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <h3>Good luck on your new home!</h3>
+            <img id="Qr-Code" src="./assets/images/qrCode.png">
+          </div>
+        </div>
+      </div>
     <div id="ticket">
 
+
+       
+
+        
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
