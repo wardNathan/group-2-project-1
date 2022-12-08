@@ -54,4 +54,15 @@ flex-wrap: wrap;
 max-width: 100%;
 min-width: 800px;
 }
-
+.card {
+    width: 400px;
+    height: 200px;
+    margin-left: 160px;
+    margin-top: 20px;
+    
+}
+#Qr-Code, img {
+    width:  100px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
