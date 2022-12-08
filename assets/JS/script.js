@@ -150,5 +150,37 @@ console.log(exoplanets)
 
   getPlanetSticker()
 
-  
+
 console.log(getPlanetSticker);
+
+function displayTime() {
+  var rightNow = dayjs().format('MMM DD, YYYY ');
+  timeDisplayEl.text(rightNow);
+}
+displayTime()
+
+
+let countDownDate = new Date("Jan 5, 2023 15:37:25").getTime();
+let interval = setInterval(function() {
+let now = new Date().getTime();
+let distance = countDownDate - now;
+let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML = days + " d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(interval);
+    document.getElementById("countdown").innerHTML = "BOOM";
+  }
+}, 1000);
+
+
+rand(exoplanets)
+console.log(exoplanets)
+
+console.log(getPlanetSticker);
+
