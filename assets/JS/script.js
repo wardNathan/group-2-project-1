@@ -1,4 +1,6 @@
 
+var timeDisplayEl = $('#time-display');
+
 function getApod() {
   let requestUrl = 'https://api.nasa.gov/planetary/apod?api_key=Y8ssRfZuDgzbCeAiyKHGwmeED3ohkeyHHyZc2BrZ';
 
@@ -41,19 +43,49 @@ function getAsteroids() {
 
 getAsteroids(getAsteroids)
 
-  function getExoplanet() {
-    let requestUrl = 'https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=cumulative&format=JSON';
+
+  function getPlanetSticker() {
+    let requestUrl = 'https://api.giphy.com/v1/stickers/search?api_key=4whkYATvg44bONJ5xoAyLAWmQs973i0g&q=planets&limit=25&offset=0&rating=g&lang=en';
     fetch(requestUrl)
       .then(function (response) {
         return response.json();
       })
       .then(function (data) {
-        console.log(data);   
-        
-        
-
+        console.log(data);
+        let randNum = Math.floor(Math.random() * 24) + 1;
+        document.getElementById("ticket").innerHTML = "<img src = " + data['data'][randNum]['images']['downsized']['url'] + ">";
       });
   }
+
+  getPlanetSticker()
+
+  
+console.log(getPlanetSticker);
+
+function displayTime() {
+  var rightNow = dayjs().format('MMM DD, YYYY ');
+  timeDisplayEl.text(rightNow);
+}
+displayTime()
+
+
+let countDownDate = new Date("Jan 5, 2023 15:37:25").getTime();
+let interval = setInterval(function() {
+let now = new Date().getTime();
+let distance = countDownDate - now;
+let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML = days + " d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(interval);
+    document.getElementById("countdown").innerHTML = "BOOM";
+  }
+}, 1000);
 
 const exoplanets = [
   {
@@ -134,53 +166,3 @@ function rand(exoplanets) {
 
 getExoplanet()
 console.log(exoplanets)
-
-  function getPlanetSticker() {
-    let requestUrl = 'https://api.giphy.com/v1/stickers/search?api_key=4whkYATvg44bONJ5xoAyLAWmQs973i0g&q=planets&limit=25&offset=0&rating=g&lang=en';
-    fetch(requestUrl)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        console.log(data);
-        let randNum = Math.floor(Math.random() * 24) + 1;
-        document.getElementById("ticket").innerHTML = "<img src = " + data['data'][randNum]['images']['downsized']['url'] + ">";
-      });
-  }
-
-  getPlanetSticker()
-
-
-console.log(getPlanetSticker);
-
-function displayTime() {
-  var rightNow = dayjs().format('MMM DD, YYYY ');
-  timeDisplayEl.text(rightNow);
-}
-displayTime()
-
-
-let countDownDate = new Date("Jan 5, 2023 15:37:25").getTime();
-let interval = setInterval(function() {
-let now = new Date().getTime();
-let distance = countDownDate - now;
-let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  document.getElementById("countdown").innerHTML = days + " d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  if (distance < 0) {
-    clearInterval(interval);
-    document.getElementById("countdown").innerHTML = "BOOM";
-  }
-}, 1000);
-
-
-rand(exoplanets)
-console.log(exoplanets)
-
-console.log(getPlanetSticker);
-
