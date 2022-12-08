@@ -1,3 +1,47 @@
+
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #cfd8dc;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding-left: 1rem;
+}
+*/
+body {
+    background-color: #121212;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 40px;
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 80px;
+}
+/* @media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+    nav li {
+        padding: 0.5rem 0;
+    } */
  li {
 display: inline-block;
 text-align: center;
@@ -11,3 +55,4 @@ flex-wrap: wrap;
 max-width: 100%;
 min-width: 800px;
 }
+
