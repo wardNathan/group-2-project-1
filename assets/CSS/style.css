@@ -31,8 +31,8 @@ body {
     max-height: 80px;
 }
 #POD{
- height: 800px;
- width: 800px;
+ height: auto;
+ width: auto;
 }
 #impact{
     font-size:xx-large;
