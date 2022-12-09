@@ -9,11 +9,11 @@ function getApod() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);  
-      
+      console.log(data);    
+       
       document.getElementById("POD").innerHTML = "<img src = " + data['hdurl'] + ">";
       
-
+ 
     });
 }
 
