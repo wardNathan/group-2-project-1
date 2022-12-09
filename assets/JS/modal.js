@@ -2,7 +2,6 @@ var button = document.getElementById('button');
 var modal = document.getElementById('form-modal');
 var close = document.getElementsByClassName('modal-close') [0];
 
-
 button.onclick = function() {
     modal.style.display = 'block';
 }
