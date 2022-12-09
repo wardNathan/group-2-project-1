@@ -1,7 +1,7 @@
 var button = document.getElementById('button');
 var modal = document.getElementById('form-modal');
 var close = document.getElementsByClassName('modal-close') [0];
-var modal = document.getElementsById('submit');
+
 
 button.onclick = function() {
     modal.style.display = 'block';
@@ -15,3 +15,7 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 }
+
+
+
+
