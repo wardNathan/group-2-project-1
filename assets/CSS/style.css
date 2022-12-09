@@ -1,19 +1,4 @@
-/* nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background: #cfd8dc;
-}
 
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav li {
-    padding-left: 1rem;
-}
-*/
 body {
     background-color: #121212;
 }
@@ -75,31 +60,6 @@ body {
     box-shadow: 0 0 10px 2px;
     margin-top: 15px;
 }
-/* @media only screen and (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
-    nav ul {
-        flex-direction: column;
-        padding-top: 0.5rem;
-    }
-    nav li {
-        padding: 0.5rem 0;
-    }
- li {
-display: inline-block;
-text-align: center;
-}
-
-#POD, img {
-width: 800px;
-
-margin-left: 50px;
-flex-wrap: wrap;
-max-width: 100%;
-min-width: 800px;
-}
-
 .modal-wrap {
     background: rgba(166, 154, 200, 0.919);
     position: fixed;
@@ -107,15 +67,3 @@ min-width: 800px;
     top: 30%;
     border-radius: 35px;
 }
-.card {
-    width: 400px;
-    height: 200px;
-    margin-left: 160px;
-    margin-top: 20px;
-    
-}
-#Qr-Code, img {
-    width:  100px;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-} */
