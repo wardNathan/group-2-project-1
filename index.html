@@ -20,7 +20,7 @@
         <nav id="nav" class="navbar has-background-grey-light">
             <img src="./assets/Images/Untitled_Artwork.png" class="logo navbar-brand px-2 py-2">
             <div class="navbar-menu">
-                <div class="navbar-start navbar-item">
+                <div class="navbar-brand navbar-item">
                     <h1 class="title">Emergency Teleport</h1>
                 </div>
                 <div class="navbar-end navbar-item has-dropdown is-hoverable is-right">
@@ -28,6 +28,7 @@
                         Menu
                     </a>
                     <div class="navbar-dropdown is-right">
+                        
                         <a class="navbar-item">
                             Daily Picture
                         </a>
@@ -43,20 +44,29 @@
             </div>
         </nav>
     </header>
+<section id="thepod" class="column is-half is-offset-one-quarter">
     <div>
         <h1>Hello travelers!</h1>
-        <p>Are you prepared for a journey of a lifetime? You better be, because the world is ending!</p>
+        <p>Are you prepared for a journey of a lifetime? You better be, because the world is ending! Today <span id="time-display"></span> 
+            an asteroid will hit the planet.</p>
     </div>
-    <div id="POD">
+    
+    <div id="POD" class="">
         <img>
     </div>
+</section>
+<section id="theasteroid" class="column is-half is-offset-one-quarter">
     <div id="Asteroid">
-        <div id="distance"></div>
-        <div id="size"></div>
-        <div id="hazardous"></div>
-        <div id="name"></div>
-        <div id="velocity"></div>
+        <div id="incoming">Incoming Asteroid</div>
+        <div id="distance" ></div>
+        <div id="size" ></div>
+        <div id="hazardous" ></div>
+        <div id="name" ></div>
+        <div id="velocity" ></div>
+        <div id="impact">Impact Time: <span id="countdown"></span></div>
     </div>
+</section>
+<section id="theform" class="column is-half is-offset-one-quarter">
     <div id="Exoplanet">
         <!-- <form>
             <input type="text" placeholder="First Name" id="firstName">
@@ -132,8 +142,17 @@
             </div>
         </div>
     </div>
+</section>
+<section id="themodal" class="column is-half is-offset-one-quarter">
+    <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <h3>Good luck on your new home!</h3>
+            <img id="Qr-Code" src="./assets/images/qrCode.png">
+          </div>
+        </div>
+      </div>
     <div id="ticket">
-    
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
