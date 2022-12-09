@@ -62,6 +62,7 @@ getAsteroids(getAsteroids)
   
 console.log(getPlanetSticker);
 
+
 function displayTime() {
   var rightNow = dayjs().format('MMM DD, YYYY ');
   timeDisplayEl.text(rightNow);
