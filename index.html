@@ -23,19 +23,18 @@
                 <div class="navbar-brand navbar-item">
                     <h1 class="title">Emergency Teleport</h1>
                 </div>
-                <div class="navbar-end navbar-item has-dropdown is-hoverable is-right">
+                <div class=" navbar-item has-dropdown is-hoverable is-right">
                     <a class="navbar-link">
                         Menu
                     </a>
                     <div class="navbar-dropdown is-right">
-                        
-                        <a class="navbar-item">
+                        <a href="#POD"class="navbar-item">
                             Daily Picture
                         </a>
-                        <a class="navbar-item">
+                        <a href="#Asteroid"class="navbar-item">
                             Asteroid
                         </a>
-                        <a class="navbar-item">
+                        <a href ="#button"class="navbar-item">
                             Get Tickets
                         </a>
                         <hr class="navbar-divider">
@@ -46,9 +45,9 @@
     </header>
 <section id="thepod" class="column is-half is-offset-one-quarter">
     <div>
-        <h1>Hello travelers!</h1>
-        <p>Are you prepared for a journey of a lifetime? You better be, because the world is ending! Today <span id="time-display"></span> 
-            an asteroid will hit the planet.</p>
+        <h1 class="has-text-centered">Hello travelers!</h1>
+        <p>Are you ready for the journey of a lifetime? You better be! Unfortunately today: <span id="time-display"></span>, NASA's systems have detected an asteroid set to collide with Earth, all preventative attempts have failed. Lucky for us, brand new teleportation technology has been developed that will allow Earth’s residents to teleport to cataloged exoplanets that are most likely to support life. Some exoplanets are more habitable than others, but they would not be able to support all of Earth’s population. To maintain fairness, a lottery system has been put in place to randomly assign your teleport location. Many of you will have a pleasant relocation! As for the others, we wish you luck on your endeavors.</p>
+        <p class="has-text-centered">As you prepare for your journey, please enjoy this daily picture of space!</p>
     </div>
     
     <div id="POD" class="">
@@ -76,39 +75,39 @@
             <div class="modal-background"></div>
             <div class="modal-content">
                 <!-- Any other Bulma elements you want -->
-                <div class="section modal-wrap">
-                    <div class="field">
-                        <label class="label is-large">First Name</label>
-                        <div class="control">
-                            <input class="input is-rounded is-large" type="text" placeholder="e.g Alex" id="firstName">
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label is-large">Last Name</label>
-                        <div class="control">
-                            <input class="input is-rounded is-large" type="text" placeholder="e.g. Smith" id="lastName">
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label is-large">How many will be joining you?</label>
-                        <div class="control">
-                            <input class="input is-rounded is-large" type="text" placeholder="e.g. five, 55" id="familyCount">
-                        </div>
-                    </div>              
-
-                    <div class="field">
-                        <div class="control">
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                I agree to the <a href="#">terms and conditions</a>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="control">
-                        <button class="button is-primary" id="submit">Submit</button>
-                    </div>
+                    <div class="section modal-wrap">
+                             <div class="field">
+                                 <label class="label is-large">First Name</label>
+                                 <div class="control">
+                                     <input class="input is-rounded is-large" type="text" placeholder="e.g Alex" id="firstName">
+                                 </div>
+                             </div>
+                         
+                             <div class="field">
+                                 <label class="label is-large">Last Name</label>
+                                 <div class="control">
+                                     <input class="input is-rounded is-large" type="text" placeholder="e.g. Smith" id="lastName">
+                                 </div>
+                             </div>
+                         
+                             <div class="field">
+                                 <label class="label is-large">How many will be joining you?</label>
+                                 <div class="control">
+                                     <input class="input is-rounded is-large" type="text" placeholder="e.g. five, 55" id="familyCount">
+                                 </div>
+                             </div>              
+                         
+                             <div class="field">
+                                 <div class="control">
+                                     <label class="checkbox">
+                                         <input type="checkbox">
+                                         I agree to the <a href="#">terms and conditions</a>
+                                     </label>
+                                 </div>
+                             </div>
+                             <div class="control">
+                                 <button class="button is-primary" id="submit">Submit</button>
+                             </div>
                 </div>
             </div>
             <button class="modal-close is-large is-warning" aria-label="close"></button>
