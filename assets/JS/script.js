@@ -167,3 +167,17 @@ function rand(exoplanets) {
 
 
 console.log(exoplanets)
+
+var submitButton = document.querySelector('#submit');
+
+submitButton.addEventListener('click', function(event) {
+  event.preventDefault();
+
+  var firstNameEl = document.querySelector('#firstName').value;
+  var lastNameEl = document.querySelector('#lastName').value;
+  var familyCountEl = document.querySelector('#familyCount').value;
+
+  localStorage.setItem("firstName", firstNameEl);
+  localStorage.setItem("lastName", lastNameEl);
+  localStorage.setItem("familyCount", familyCountEl);
+});
