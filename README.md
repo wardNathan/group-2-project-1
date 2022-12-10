@@ -15,11 +15,11 @@ Giphy - Planet stickers
 
 ## Usage
 
-![alttext](./assets/images/site1.png)
+![alttext](./assets/Images/site1.png)
 
-![alttext](./assets/images/site2.png)
+![alttext](./assets/Images/site2.png)
 
-![alttext](./assets/images/site3.png)
+![alttext](./assets/Images/site3.png)
 
 ## Credits
 
