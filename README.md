@@ -9,8 +9,8 @@ N/A
 
 ## APIs
 
-NASA - Picture of the Day
-NASA - Asteroid tracker
+NASA - Picture of the Day, 
+NASA - Asteroid tracker, 
 Giphy - Planet stickers 
 
 ## Usage
