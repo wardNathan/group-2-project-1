@@ -71,3 +71,31 @@ text-align: center;
     display: none;
     justify-content: space-between;
 }
+#destination{
+    color: #121212;
+    text-decoration: underline;
+}
+#planetName{
+    color: #121212;
+}
+#star{
+    color: #121212;
+}
+#distance{
+    color: #121212;
+}
+#temperature{
+    color: #121212;
+}
+#notes{
+    color: #121212;
+}
+#firstName{
+    color: #121212;
+}
+#lastName{
+    color: #121212;
+}
+#familyCount{
+    color: #121212;
+}
