@@ -97,8 +97,8 @@ const exoplanets = [
 
     $('#planetName').append("Planet Name: " + exoplanets[random]['name'] + " ");
     $('#star').append("Planet Star: " + exoplanets[random]['star'] + " ");
-    $('#distance').append("Distance From Earth: " + exoplanets[random]['dis'] + " ");
-    $('#temperature').append("Planet Temperature: " + exoplanets[random]['temp'] + " ");
+    $('#distance').append("Distance From Earth: " + exoplanets[random]['dis'] + " Lightyears ");
+    $('#temperature').append("Planet Temperature: " + exoplanets[random]['temp'] + "° Fahrenheit ");
     $('#notes').append("Planet Notes: " + exoplanets[random]['notes'] + " ");
 
 console.log(random);
