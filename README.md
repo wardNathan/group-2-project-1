@@ -15,6 +15,8 @@ Giphy - Planet stickers
 
 ## Usage
 
+https://wardnathan.github.io/group-2-project-1/
+
 ![alttext](./assets/Images/site1.png)
 
 ![alttext](./assets/Images/site2.png)
