@@ -7,6 +7,11 @@ Emergency Teleport is a website for the evacuation of Earth for catastrophic ast
 
 N/A
 
+## APIs
+
+NASA - Picture of the Day
+NASA - Asteroid tracker
+Giphy - Planet stickers 
 
 ## Usage
 
@@ -16,9 +21,9 @@ N/A
 
 ## Credits
 
-Kameron Farshchian
-Nathan Ward
-Eliezer Cadena
+Kameron Farshchian, 
+Nathan Ward, 
+Eliezer Cadena, 
 Anthony Angelos
 
 ## License
